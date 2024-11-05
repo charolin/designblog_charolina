@@ -18,7 +18,7 @@ if (isset($_GET['id'])) {
         echo "Error: " . $conn->error;
     }
 
-    // Menutup statement
+    // close statement
     $stmt->close();
 } else {
     echo "ID Author tidak diberikan.";
